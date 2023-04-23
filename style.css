@@ -1,0 +1,41 @@
+/* Styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+/* Styling for the navbar toggle button */
+.navbar-toggle {
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 24px;
+}
+
+/* Styling for the navbar menu */
+.navbar-menu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  padding: 10px;
+}
+
+.navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styling for the navbar menu when it's open */
+.navbar-menu.show {
+  display: flex;
+  flex-direction: column;
+}
