@@ -26,6 +26,11 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+main {
+  position: relative;
 }
 
 ul,
@@ -85,6 +90,31 @@ img {
 
   .grid-item:nth-child(3) {
     grid-column: 3 / span 2;
+  }
+
+  #blob {
+    background-color: white;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    height: 300px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50%, -50%;
+    border-radius: 50%;
+    animation: rotate 20s infinite;
+    filter: blur(200px);
+    opacity: 0.5;
+    scale: 0.8;
+  }
+
+  @keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    to {
+      rotate: 360deg;
+    }
   }
 }
 
